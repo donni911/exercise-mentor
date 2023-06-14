@@ -8,7 +8,7 @@ export interface User {
   salary: number;
 }
 
-export default [
+const users: User[] = [
   {
     id: Math.random(),
     photo: "https://picsum.photos/200",
@@ -21,46 +21,21 @@ export default [
   {
     id: Math.random(),
     photo: "https://picsum.photos/200",
-    name: "Rodion",
-    surname: "Voinarovskyi",
-    job: "Frontend Developer",
-    companyName: "ideil",
-    salary: 100,
+    name: "Bogdan",
+    surname: "Mitsevskyi",
+    job: "Backend Developer",
+    companyName: "42",
+    salary: 200,
   },
   {
     id: Math.random(),
     photo: "https://picsum.photos/200",
-    name: "Rodion",
-    surname: "Voinarovskyi",
-    job: "Frontend Developer",
-    companyName: "ideil",
-    salary: 100,
-  },
-  {
-    id: Math.random(),
-    photo: "https://picsum.photos/200",
-    name: "Rodion",
-    surname: "Voinarovskyi",
-    job: "Frontend Developer",
-    companyName: "ideil",
-    salary: 100,
-  },
-  {
-    id: Math.random(),
-    photo: "https://picsum.photos/200",
-    name: "Rodion",
-    surname: "Voinarovskyi",
-    job: "Frontend Developer",
-    companyName: "ideil",
-    salary: 100,
-  },
-  {
-    id: Math.random(),
-    photo: "https://picsum.photos/200",
-    name: "Rodion",
-    surname: "Voinarovskyi",
-    job: "Frontend Developer",
-    companyName: "ideil",
-    salary: 100,
+    name: "Evgen",
+    surname: "Petrovskyi",
+    job: "Devops",
+    companyName: "softserve",
+    salary: 1000,
   },
 ];
+
+export default users;

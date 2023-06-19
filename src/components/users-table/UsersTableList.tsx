@@ -3,17 +3,16 @@ import UserTableItem from './UserTableItem'
 import users from '../../data/users'
 
 const UsersTableList = () => {
+    const tableValues = ['Photo', 'Name', 'Surname', 'Job', 'Company Name', 'Salary']
+
     return (
         <Box m={6} w={'100%'} overflow={'auto'} maxHeight={'500px'}>
             <Table colorScheme='whiteAlpha'>
                 <Thead position="sticky" top={0} bgColor="#73A9AD">
                     <Tr>
-                        <Th color={'white'}>Photo</Th>
-                        <Th color={'white'}>Name</Th>
-                        <Th color={'white'}>Surname</Th>
-                        <Th color={'white'}>Job</Th>
-                        <Th color={'white'}>Company Name</Th>
-                        <Th color={'white'}>Salary</Th>
+                        {tableValues.map((value) => (
+                            <Th key={value} color={'white'}>{value}</Th>
+                        ))}
                     </Tr>
                 </Thead>
                 <Tbody>

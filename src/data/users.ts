@@ -11,12 +11,21 @@ export interface User {
 const users: User[] = [
   {
     id: Math.random(),
-    photo: "https://picsum.photos/200",
+    photo: "",
     name: "Rodion",
     surname: "Voinarovskyi",
     job: "Frontend Developer",
     companyName: "ideil",
     salary: 100,
+  },
+  {
+    id: Math.random(),
+    photo: "",
+    name: "",
+    surname: "",
+    job: "",
+    companyName: "",
+    salary: 0,
   },
   {
     id: Math.random(),

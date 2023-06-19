@@ -11,14 +11,14 @@ const UserTableItem = ({ user }: Props) => {
             <Image
                 boxSize='100px'
                 objectFit='cover'
-                src={user.photo}
+                src={user.photo ? user.photo : '/vite.svg'}
             />
         </Td>
-        <Td>{user.name}</Td>
-        <Td>{user.surname}</Td>
-        <Td>{user.job}</Td>
-        <Td>{user.companyName}</Td>
-        <Td>{user.salary}$</Td>
+        <Td>{user.name ? user.name : '-'}</Td>
+        <Td>{user.surname ? user.surname : '-'}</Td>
+        <Td>{user.job ? user.job : '-'}</Td>
+        <Td>{user.companyName ? user.companyName : '-'}</Td>
+        <Td>{user.salary ? user.salary + '$' : '-'}</Td>
     </Tr>
 
 }
